@@ -34,8 +34,8 @@ The purpose of this tool is to convert a VECTR 8.x MongoDB to a VECTR 9.0 Postgr
 ## Run Mongodump and Extract
 
 1. Run the perform_mongodump.sh script with parameters as follows. 
-   2. Following -d insert the VECTR directory, in this example we will assume /opt/vectr 
-   3. Following the -o insert the directory created previously, in our example /opt/vectr-sql-migration/mongodumps
+   1. Following -d insert the VECTR directory, in this example we will assume /opt/vectr 
+   2. Following the -o insert the directory created previously, in our example /opt/vectr-sql-migration/mongodumps
        ```shell
       ./perform_mongodump.sh -d /opt/vectr -o /opt/vectr-sql-migration/mongodumps
        ```

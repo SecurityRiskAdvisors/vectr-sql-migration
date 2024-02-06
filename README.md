@@ -26,9 +26,9 @@ The purpose of this tool is to convert a VECTR 8.x MongoDB to a VECTR 9.0 Postgr
 3. Create required directories
 
     ```shell
-   mkdir -P /opt/vectr-sql-migration/user/mongo
-   mkdir -P /opt/vectr-sql-migration/sqlmigrations
-   mkdir -P /opt/vectr-sql-migration/mongodumps
+   mkdir -p /opt/vectr-sql-migration/user/mongo
+   mkdir -p /opt/vectr-sql-migration/sqlmigrations
+   mkdir -p /opt/vectr-sql-migration/mongodumps
     ```
    
 ## Run Mongodump and Extract
@@ -43,6 +43,11 @@ The purpose of this tool is to convert a VECTR 8.x MongoDB to a VECTR 9.0 Postgr
    ```shell
    tar -zxvf /opt/vectr-sql-migration/mongodumps/2024_02_05__22_39_53.tgz -C /opt/vectr-sql-migration/user/mongo/
    ```
+   
+At this point you should have the dump extracted. To confirm the folder structure is correct look for the following GoldStandard folder, in our example /opt/vectr-sql-migration/user/mongo/GoldStandard
+
+If so you are ready to proceed, if not look for any unnecessary nested folders until it is as above. 
+
 ## Run Migration
 
 **Warning: There are new constraints on the size of some fields in the sql data model that previously did not exist.

@@ -20,7 +20,7 @@ The purpose of this tool is to convert a VECTR 8.x MongoDB to a VECTR 9.0 Postgr
 
     ```shell
    cd /opt/vectr-sql-migration
-   wget <insert link>
+   wget https://github.com/SecurityRiskAdvisors/vectr-sql-migration/releases/download/ce-1.0.0/sqlmigration-1.0.0.zip
    unzip sqlmigration-1.0.0.zip
     ```
 3. Create required directories

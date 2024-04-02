@@ -1,8 +1,4 @@
-# VECTR MongoDB to Postgres Migration Tool **BETA**
-
-**Note: This is a preview build of our migration tool. You should in no circumstances treat this as a production ready upgrade. _Any data migrated will not be usable in the 9.0 GA release._**
-
-**While we are in this preview phase we are asking all VECTR users to test migrating their data. Our new data model and schema may have unanticipated issues with some community member use cases. By verifying your data migrates successfully now you ensure a smooth transition.**
+# VECTR MongoDB to Postgres Migration Tool
 
 The purpose of this tool is to convert a VECTR 8.x MongoDB to a VECTR 9.0 Postgres DB. 
 
@@ -74,4 +70,4 @@ docker compose down -v
 
 ## Load into VECTR 9.0
 
-This section will be populated when the build becomes generally available. 
+This will be documented on our Docs site, as this project is only intended to cover the completion of running the tool. 

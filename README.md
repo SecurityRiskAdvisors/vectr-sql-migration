@@ -13,7 +13,6 @@ The purpose of this tool is to convert a VECTR 8.x MongoDB to a VECTR 9.0 Postgr
 1. Create a directory for the tool to run in, for this example we'll use /opt/vectr-sql-migration 
     ```shell
     mkdir /opt/vectr-sql-migration
-    cd /opt/vectr-sql-migration
     ```
 
 2. Download and unzip the migration zip
@@ -54,7 +53,7 @@ If so you are ready to proceed, if not look for any unnecessary nested folders u
 The default behavior of the migration tool is to truncate large strings to conform to the new schema.
 If you wish to change this, in the .env file set FORCE_MIGRATE=false This will cause the migration tool to exit with errors instead of modifying data.**
 
-1. From your vectr-sql-migration directory run the docker-compose. Note we're running this command without the -d. We must observe the migration running in case of any errors. If you do see a violation it will print to the log. Open an issue under the GitHub repository <insert link>. 
+1. From your vectr-sql-migration directory run the docker-compose. Note we're running this command without the -d. We must observe the migration running in case of any errors. If you do see a violation it will print to the log. Open an issue under this project using the issue template. 
 
  ```shell
 docker compose up
@@ -68,7 +67,7 @@ vectrmigration1_vectr-migration_1 exited with code 0
 
 ## Clean up 
 
-1. In the case you have a successful migration, you will want to Ctrl + C to stop the containers. Then to remove the migration docker envionment
+1. In the case you have a successful migration, you will want to Ctrl + C to stop the containers. Then to remove the migration docker envionment **Warning: This command destroys the volumes used for migration, which should no longer be needed. If you run this command in the incorrect directory you may delete data inadventently. Ensure you are in the directory with the sql-migration docker-compose.yml** 
 ```shell
 docker compose down -v
 ```

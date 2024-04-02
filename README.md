@@ -70,4 +70,6 @@ docker compose down -v
 
 ## Load into VECTR 9.0
 
-This will be documented on our Docs site, as this project is only intended to cover the completion of running the tool. 
+See our full Docs site to continue this guide,
+
+https://docs.vectr.io/postgresmigration/
